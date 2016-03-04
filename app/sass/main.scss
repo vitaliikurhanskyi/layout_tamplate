@@ -1,3 +1,7 @@
 @import "bootstrap";
 @import "fonts";
 @import "header";
+
+section {
+	@include make-row();
+}

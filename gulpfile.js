@@ -78,16 +78,17 @@ gulp.task('connect', connect.server({
 
 /* end gulp-conect*/
 
-/* gulp-for-compass */
+/* gulp-ruby-sass */
 
 
 gulp.task('sass', function () {
   return sass('./app/sass/*.scss')
     .on('error', sass.logError)
-    .pipe(gulp.dest('./app/css'));
+    .pipe(gulp.dest('./app/css'))
+    .pipe(connect.reload());
 });
 
-/* end gulp-for-compass */
+/* end gulp-ruby-sass */
 
 /* HTML */
 
@@ -109,7 +110,7 @@ gulp.task('fonts', function() {
 
 gulp.task('watch', function () {
 	gulp.watch('bower.json', ['bower']); //wiredep
-	gulp.watch(['./app/sass/*.scss'], ['compass']);
+	gulp.watch(['./app/sass/*.scss'], ['sass']);
 	gulp.watch(['./app/index.html'], ['html']);
 });
 
