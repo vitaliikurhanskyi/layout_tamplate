@@ -1261,6 +1261,13 @@ body {
   src: url("/fonts/roboto-black-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-black-webfont.woff") format("woff"), url("/fonts/roboto-black-webfont.svg#robotoblack") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'roboto-medium';
+  src: url("/fonts/roboto-medium-webfont.eot");
+  src: url("/fonts/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/roboto-medium-webfont.woff") format("woff"), url("/fonts/roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* top */
 .header {
   background-color: #2c3e50; }
 
@@ -1289,12 +1296,16 @@ body {
 
 .logo {
   background-color: #fff;
-  color: #27ae60;
   display: inline-block;
-  font-family: 'roboto-black', Arial;
-  font-size: 25px;
   padding: 5px 23px;
-  text-transform: uppercase; }
+  margin-top: 1px; }
+  .logo a {
+    font-family: 'roboto-black', Arial;
+    font-size: 25px;
+    color: #27ae60;
+    text-transform: uppercase; }
+    .logo a:hover {
+      text-decoration: none; }
 
 .top__nav {
   position: relative;
@@ -1307,33 +1318,50 @@ body {
       width: 33.33333%; } }
 
 .nav {
-  text-align: center;
-  vertical-align: -100%;
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: -70%;
+  margin-left: 50px; }
 
 .nav_item {
-  font-family: 'roboto';
   color: #fff;
-  margin-left: 34px;
-  font-size: 15px; }
+  font-family: 'roboto';
+  font-size: 15px;
+  margin-left: 34px; }
   .nav_item:first-child {
     margin-left: 0; }
   .nav_item:hover {
-    color: #fff; }
+    color: #ededed;
+    text-decoration: none; }
 
 .top__enter {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  text-align: right; }
   @media (min-width: 992px) {
     .top__enter {
       float: left;
       width: 33.33333%; } }
 
 .enter {
-  color: red; }
+  display: inline-block;
+  padding: 5px 10px; }
+  .enter button {
+    background-color: #25a65c;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'roboto-medium';
+    font-size: 15px;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    outline: none; }
+    .enter button:active {
+      background-color: #209150;
+      color: #f2f2f2; }
 
+/* end top */
 /* slider */
 .slider {
   padding: 0;
@@ -1341,6 +1369,7 @@ body {
   .slider img {
     width: 100%; }
 
+/* end slider */
 @media only screen and (max-width: 1240px) {
   .top {
     width: 100%; } }
