@@ -24,7 +24,7 @@
 	
 	
 	a {
-		font-family: 'roboto-black', Arial;
+		font-family: 'roboto-black', Arial, sans-serif;
 		font-size: 1.5625em;
 		color: #27ae60;
 		text-transform: uppercase;
@@ -51,7 +51,7 @@
 
 .nav_item {
 	color: #fff;
-	font-family: 'roboto';
+	font-family: 'roboto', Arial, sans-serif;
 	font-size: 0.9375em;
 	margin-left: 35px;
 	
@@ -82,7 +82,7 @@
 		border-radius: 4px;
 		border: none;
 		color: #fff;
-		font-family: 'roboto-medium';
+		font-family: 'roboto-medium', Arial, sans-serif;
 		font-size: 0.9375em;
 		outline: none;
 		padding: 8px 22px;
@@ -157,7 +157,7 @@
 
 			h1{
 				color: #555555;
-				font-family: 'roboto-thin';
+				font-family: 'roboto-thin', Arial, sans-serif;
 				font-size: 2.9em;
 				font-weight: 300;
 				opacity: 0.8;
@@ -168,7 +168,7 @@
 				border-radius: 4px;
 				border: none;
 				color: #fff;
-				font-family: 'roboto-thin';
+				font-family: 'roboto-thin', Arial, sans-serif;
 				font-size: 1.2em;
 				font-size: 15px;
 				outline: none;

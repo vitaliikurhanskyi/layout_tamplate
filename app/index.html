@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>layout_tamplate</title>
+	
 	<!-- build:css css/vendor.css -->
 	<!-- bower:css -->
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
+	<link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.css" />
 	<!-- endbower -->
 	<!-- endbuild -->
 	<!-- build:css css/main.css -->
@@ -135,24 +137,21 @@
 						<div class="register">
 							<h2>Register</h2>
 							<form action="#">								 
-  								<input type="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
-  								<input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
-								<div class="input-group">
-							      <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
-							      <div class="input-group-btn">
-							        <button type="button" class="btn btn-secondary">Action</button>
-							        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							          <span class="sr-only">Toggle Dropdown</span>
-							        </button>
-							        <div class="dropdown-menu dropdown-menu-right">
-							          <a class="dropdown-item" href="#">Action</a>
-							          <a class="dropdown-item" href="#">Another action</a>
-							          <a class="dropdown-item" href="#">Something else here</a>
-							          <div role="separator" class="dropdown-divider"></div>
-							          <a class="dropdown-item" href="#">Separated link</a>
-							        </div>
-							      </div>
-							    </div>
+  								<div class="form-inputs">
+  									<input type="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+  									<input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+									<select class="selectpicker">
+									  <option>Country</option>
+									  <option>Country 1</option>
+									  <option>Country 2</option>
+									  <option>Country 3</option>
+									</select>
+  								<button class="submit">submit</button>
+  								</div>
+
+
+
+
 							</form>
 						</div>
 					</div>
@@ -161,9 +160,14 @@
 		</section>
 	</div>
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+	<!-- build:js scripts/vendor.js -->
 	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
 	<!-- endbower -->
+	<!-- endbuild -->
 	<!-- build:js scripts/main.js -->
 	<script src="scripts/bootstrap.min.js"></script>
 	<!-- endbuild -->

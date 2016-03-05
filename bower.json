@@ -2,6 +2,8 @@
   "name": "layout_template",
   "version": "0.1.0",
   "dependencies": {
-    "normalize-css": "normalize.css#^3.0.3"
+    "normalize-css": "normalize.css#^3.0.3",
+    "bootstrap-select": "^1.10.0",
+    "jquery": "1.11.3"
   }
 }
