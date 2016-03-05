@@ -1,0 +1,45 @@
+.bg-article {
+	background-color: #ccc;
+}
+
+.main {
+	@include container-fixed;
+	background-color: #fff;
+	width: 76%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.main__content {
+	@include make-md-column(7);
+	@include make-xs-column(7);
+	@include make-sm-column(7);
+
+	h2 {
+		font-family: 'roboto-light';
+		padding-top: 10px;
+		padding-left: 21px;
+		font-size: 2.1875em;
+		font-weight: 300;
+	}
+
+	p {
+		font-family: 'roboto-light';
+		line-height: 1.5em;
+		border: 1px solid red;
+		padding: 5px 20px;
+	}
+}
+
+.main__photo {
+	@include make-md-column(5);
+	@include make-xs-column(5);
+	@include make-sm-column(5);
+
+	.img {
+		width: 75%;
+		height: 75%;
+		margin-top: 50px;
+		margin-left: 10px;
+	}
+}
