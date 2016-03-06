@@ -2600,12 +2600,12 @@ body {
       bottom: 0px;
       position: absolute; }
   .slider .carousel-inner .item .carousel-caption {
-    right: 20px;
-    top: 10px; }
+    top: 24px;
+    padding-left: 320px; }
   .slider .carousel-inner .item h1 {
     color: #555555;
     font-family: 'roboto-thin', Arial, sans-serif;
-    font-size: 2.9em;
+    font-size: 3.4375em;
     font-weight: 300;
     opacity: 0.8; }
   .slider .carousel-inner .item .btn {
@@ -2626,7 +2626,7 @@ body {
 
 /* end slider */
 .bg-article {
-  background-color: #ccc; }
+  background-color: #fff; }
 
 .main {
   margin-right: auto;
@@ -2675,7 +2675,6 @@ body {
   .main__content p {
     font-family: 'roboto-light', Arial, sans-serif;
     line-height: 1.5em;
-    border: 1px solid red;
     padding: 5px 20px; }
 
 .main__photo {
@@ -2709,9 +2708,9 @@ body {
 
 .bg-footer {
   background: url(../images/bg-footer.png) no-repeat;
-  background-size: 100%;
-  height: 500px;
-  width: 100%; }
+  background-size: cover;
+  background-position: center;
+  height: 520px; }
 
 .footer {
   margin-right: auto;
@@ -2751,26 +2750,38 @@ body {
 
 .register {
   background: #fff;
-  margin-top: 75px;
   margin: 0 auto;
-  outline: none;
-  width: 460px; }
+  width: 460px;
+  margin-top: 78px;
+  height: 370px;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6; }
   .register h2 {
     font-family: 'roboto-thin', Arial, sans-serif;
     font-size: 2.1875em;
-    padding-top: 20px;
-    text-align: center; }
+    text-align: center;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 20px; }
   .register input {
     display: block;
     height: 48px;
     margin-bottom: 15px;
     width: 300px; }
   .register .form-inputs {
-    width: 300px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 300px; }
   .register .dropdown-toggle {
-    width: 300px;
-    height: 48px; }
+    height: 48px;
+    width: 300px; }
+  .register .dropdown-menu {
+    width: 300px; }
+    .register .dropdown-menu li {
+      height: 35px; }
+      .register .dropdown-menu li a {
+        padding-top: 9px; }
+        .register .dropdown-menu li a:hover {
+          border-right: 3px solid gray; }
   .register .submit {
     background-color: #25a65c;
     border-radius: 4px;
@@ -2779,15 +2790,28 @@ body {
     display: block;
     font-family: 'roboto-medium', Arial, sans-serif;
     font-size: 0.9375em;
+    height: 45px;
     margin: 20px auto;
     outline: none;
     padding: 8px 22px;
     text-transform: uppercase;
-    width: 160px;
-    height: 45px; }
+    width: 160px; }
     .register .submit:active {
       background-color: #209150;
       color: #f2f2f2; }
+
+.end {
+  background-color: #2c3e50;
+  color: #fff;
+  font-family: 'roboto-light', Arial, sans-serif;
+  font-size: 0.9375em;
+  height: 44px;
+  line-height: 35px;
+  text-align: center;
+  width: 100%; }
+
+.error {
+  color: red; }
 
 section {
   margin-left: -15px;

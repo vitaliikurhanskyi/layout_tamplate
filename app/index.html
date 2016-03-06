@@ -18,6 +18,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    
 </head>
 <body>
 	<div class="container-fluid">
@@ -64,7 +66,7 @@
 		    	<div class="item active">
 		      		<img src="images/slider_img.jpg" alt="cats">
 		      		<div class="carousel-caption">
-		      			<h1>Monetize<br>your skills now!</h1>
+		      			<h1>Monetize<br>your skills now!test</h1>
 		      			<button class="btn">go!</button>
 		      		</div>
 		    	</div>
@@ -136,28 +138,27 @@
 					<div class="footer__content">
 						<div class="register">
 							<h2>Register</h2>
-							<form action="#">								 
+							<form action="#" method="post" id="form">								 
   								<div class="form-inputs">
-  									<input type="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
-  									<input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
-									<select class="selectpicker">
-									  <option>Country</option>
+  									<input type="email" name="email" class="form-control email" placeholder="Email" aria-describedby="basic-addon1" required>
+  									<input type="password" name="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" required>
+									<select class="selectpicker" name="selectpicker" required>
 									  <option>Country 1</option>
 									  <option>Country 2</option>
 									  <option>Country 3</option>
 									</select>
-  								<button class="submit">submit</button>
+  									<button class="submit">submit</button>
   								</div>
-
-
-
-
 							</form>
 						</div>
 					</div>
 				</div>
 			</footer>
 		</section>
+	</div>
+
+	<div class="end">
+		&#169; 2015 layout
 	</div>
 	
 
@@ -166,10 +167,21 @@
 	<!-- bower:js -->
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+	<!-- <script src="bower_components/jquery-validation/dist/jquery.validate.js"></script> -->
 	<!-- endbower -->
 	<!-- endbuild -->
 	<!-- build:js scripts/main.js -->
 	<script src="scripts/bootstrap.min.js"></script>
+	<script src="scripts/form.js"></script>
 	<!-- endbuild -->
+	<!-- build:js scripts/validate.js -->
+	<script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+	<!-- endbuild -->
+	<!-- build:js scripts/ie.js -->
+	<!--[if lt IE 10]>
+	<script src="scripts/validation.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+    
 </body>
 </html>

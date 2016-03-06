@@ -4,6 +4,7 @@
   "dependencies": {
     "normalize-css": "normalize.css#^3.0.3",
     "bootstrap-select": "^1.10.0",
-    "jquery": "1.11.3"
+    "jquery": "1.11.3",
+    "jquery-validation": "^1.15.0"
   }
 }
