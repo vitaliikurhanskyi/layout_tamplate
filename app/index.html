@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>layout_tamplate</title>
-	
 	<!-- build:css css/vendor.css -->
 	<!-- bower:css -->
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" />
@@ -18,8 +17,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    
 </head>
 <body>
 	<div class="container-fluid">
@@ -117,12 +114,52 @@
 			<article class="bg-article">
 				<div class="main">
 					<div class="main__content">
-						<h2>Something about you</h2>
-						<p>
-						 In this section, you can specify any information about yourself, insert your photos, your interests and skills. It is also desirable to use tag canvas.<br>
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                        </p>
-					</div>
+						<h2>Резюме</h2>
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<p>
+									<strong>Имя</strong>: Виталий<br>
+									<strong>Фамилия</strong>: Курганский<br>
+									<strong>Год рождения</strong>: 1989<br>
+									<strong>Город</strong>: Канев (готов переехать в Киев или работать удаленно)<br>
+									<strong>Владею</strong>: HTML 5, CSS 3, SASS, Bootstrap, JavaScript, JQuery, Bower, Gulp, Git<br>
+									<strong>Изучаю</strong>: Angular JS, canvas, WordPress<br>
+									<strong>Английский</strong>: чтение тех. документации, пользуюсь словарем<br>
+									<strong>Опыт работы</strong>: 1 год (фриланс)<br>
+									<strong>Образование</strong>: Каневское училище культуры и искусств<br>
+									<strong>Ожиданий по зарплате</strong>: 5000-6000 UAH (на удаленной основе 4000-5000 UAH)<br>
+									<br>
+									<strong>Полное тест. задание на Git Hub</strong>: <a href="https://github.com/vitaliykurganskiy/splat">ссылка</a><br>
+									<br>
+									<strong>Skype</strong>: <a href="skype:vitaliykurganskiy">vitaliykurganskiy</a><br>
+									<strong>Email</strong>: <a href="mailto:vitaliykurganskiy@gmial.com">vitaliykurganskiy@gmail.com</a><br>
+									<strong>mobile</strong>: <a href="tel:+38 093 115 70 24">+38093 115 70 24</a><br>
+
+
+								</p>
+							</div>
+						</div>
+							
+						<div class="row timer">
+							<div class="col-md-3 col-sm-3 col-xs-3">
+								<h3>HTML</h3>
+								<div class="circle" id="circle1"><strong></strong></div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+								<h3>CSS</h3>
+								<div class="circle" id="circle2"><strong></strong></div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+								<h3>JS</h3>
+								<div class="circle" id="circle3"><strong></strong></div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+								<h3>JQuery</h3>
+								<div class="circle" id="circle4"><strong></strong></div>
+							</div>
+						</div>
+	  				</div>
+
 					<div class="main__photo">
 						<img class="img" src="images/aCIFdSPbn38.jpg" alt="my_photo">
 					</div>
@@ -140,10 +177,10 @@
 							<h2>Register</h2>
 							<form action="#" method="post" id="form">								 
   								<div class="form-inputs">
-  									<input type="email" name="email" class="form-control email" placeholder="Email" aria-describedby="basic-addon1" required>
-  									<input type="password" name="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" required>
-									<select class="selectpicker" name="selectpicker" required>
-									  <option>Country 1</option>
+  									<input type="email" name="email" class="form-control email" placeholder="Email"  required>
+  									<input type="password" name="password" class="form-control" placeholder="Password"  required>
+									<select class="selectpicker" name="selectpicker" required >
+									  <option value="">Country 1</option>
 									  <option>Country 2</option>
 									  <option>Country 3</option>
 									</select>
@@ -168,11 +205,14 @@
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
 	<!-- <script src="bower_components/jquery-validation/dist/jquery.validate.js"></script> -->
+	<script src="bower_components/jquery-circle-progress/dist/circle-progress.js"></script>
+	<script src="bower_components/jQuery-viewport-checker/dist/jquery.viewportchecker.min.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
 	<!-- build:js scripts/main.js -->
 	<script src="scripts/bootstrap.min.js"></script>
 	<script src="scripts/form.js"></script>
+	<script src="scripts/circle-progress-bar.js"></script>
 	<!-- endbuild -->
 	<!-- build:js scripts/validate.js -->
 	<script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>

@@ -8,13 +8,14 @@
 	width: 76%;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	min-height: 520px;
 }
 
 .main__content {
 	@include make-md-column(7);
 	@include make-xs-column(7);
 	@include make-sm-column(7);
-
+	
 	h2 {
 		font-family: 'roboto-light', Arial, sans-serif;
 		padding-top: 10px;
@@ -42,3 +43,17 @@
 		margin-left: 10px;
 	}
 }
+
+
+.circle {
+	display: inline-block;
+	position: relative;
+	strong {
+		position: absolute;
+		top: 36%;
+		left: 20%;
+		font-size: 20px;
+	}
+}
+
+

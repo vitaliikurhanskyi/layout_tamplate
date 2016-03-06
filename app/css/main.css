@@ -2636,7 +2636,8 @@ body {
   background-color: #fff;
   width: 76%;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  min-height: 520px; }
   .main:before, .main:after {
     content: " ";
     display: table; }
@@ -2705,6 +2706,15 @@ body {
     height: 75%;
     margin-top: 50px;
     margin-left: 10px; }
+
+.circle {
+  display: inline-block;
+  position: relative; }
+  .circle strong {
+    position: absolute;
+    top: 36%;
+    left: 20%;
+    font-size: 20px; }
 
 .bg-footer {
   background: url(../images/bg-footer.png) no-repeat;
