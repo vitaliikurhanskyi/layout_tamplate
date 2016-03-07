@@ -46,7 +46,6 @@
 	display: inline-block;
 	margin-top: 11px;
 	white-space: nowrap;
-
 }
 
 .nav_item {
@@ -69,6 +68,7 @@
 	@include make-md-column(2);
 	@include make-xs-column(2);
 	@include make-sm-column(2);
+
 	text-align: right;
 }
 
@@ -131,7 +131,7 @@
 	}
 
 	.carousel-control {
-		width: 420px;
+		width: 320px;
 
 		.glyphicon-chevron-right {
 			background: url(../images/arrow-right.png) no-repeat center;
@@ -152,7 +152,8 @@
 			
 			.carousel-caption{
 				top: 24px;
-				padding-left: 320px;
+				padding-left: 260px;
+				white-space: nowrap;
 			}
 
 			h1{
@@ -161,6 +162,8 @@
 				font-size: 3.4375em;
 				font-weight: 300;
 				opacity: 0.8;
+				margin-top: 10px;
+				z-index: 1000;
 			}
 
 			.btn {
@@ -181,7 +184,6 @@
 					color: darken(#fff, 5%);
 				}		
 			}
-
 		}
 	}
 }

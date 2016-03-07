@@ -2590,7 +2590,7 @@ body {
       opacity: 0.9;
       width: 16px; }
   .slider .carousel-control {
-    width: 420px; }
+    width: 320px; }
     .slider .carousel-control .glyphicon-chevron-right {
       background: url(../images/arrow-right.png) no-repeat center;
       bottom: 0px;
@@ -2601,13 +2601,16 @@ body {
       position: absolute; }
   .slider .carousel-inner .item .carousel-caption {
     top: 24px;
-    padding-left: 320px; }
+    padding-left: 260px;
+    white-space: nowrap; }
   .slider .carousel-inner .item h1 {
     color: #555555;
     font-family: 'roboto-thin', Arial, sans-serif;
     font-size: 3.4375em;
     font-weight: 300;
-    opacity: 0.8; }
+    opacity: 0.8;
+    margin-top: 10px;
+    z-index: 1000; }
   .slider .carousel-inner .item .btn {
     background-color: #25a65c;
     border-radius: 4px;
@@ -2702,8 +2705,8 @@ body {
       float: left;
       width: 41.66667%; } }
   .main__photo .img {
-    width: 75%;
-    height: 75%;
+    max-width: 300px;
+    max-height: 300px;
     margin-top: 50px;
     margin-left: 10px; }
 
@@ -2713,7 +2716,7 @@ body {
   .circle strong {
     position: absolute;
     top: 36%;
-    left: 20%;
+    left: 30%;
     font-size: 20px; }
 
 .bg-footer {
@@ -2777,7 +2780,8 @@ body {
     display: block;
     height: 48px;
     margin-bottom: 15px;
-    width: 300px; }
+    width: 300px;
+    line-height: 30px; }
   .register .form-inputs {
     margin: 0 auto;
     width: 300px; }
@@ -2821,7 +2825,7 @@ body {
   width: 100%; }
 
 .error {
-  color: red; }
+  color: #f3a300; }
 
 section {
   margin-left: -15px;
@@ -2831,3 +2835,8 @@ section {
     display: table; }
   section:after {
     clear: both; }
+
+body {
+  margin: 0 auto;
+  max-width: 2200px;
+  min-width: 960px; }

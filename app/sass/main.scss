@@ -7,3 +7,9 @@
 section {
 	@include make-row();
 }
+
+body {
+	margin: 0 auto;
+	max-width: 2200px;
+	min-width: 960px;
+}

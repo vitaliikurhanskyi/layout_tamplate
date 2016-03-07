@@ -37,13 +37,12 @@
 	@include make-sm-column(5);
 
 	.img {
-		width: 75%;
-		height: 75%;
+		max-width: 300px;
+		max-height: 300px;
 		margin-top: 50px;
 		margin-left: 10px;
 	}
 }
-
 
 .circle {
 	display: inline-block;
@@ -51,7 +50,7 @@
 	strong {
 		position: absolute;
 		top: 36%;
-		left: 20%;
+		left: 30%;
 		font-size: 20px;
 	}
 }

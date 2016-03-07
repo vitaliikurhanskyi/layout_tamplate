@@ -3,7 +3,6 @@
 	background-size: cover;
 	background-position: center;
 	height: 520px;
-
 }
 
 .footer {
@@ -40,6 +39,7 @@
 		height: 48px;
 		margin-bottom: 15px;
 		width: 300px;
+		line-height: 30px;
 	}
 
 	.form-inputs {
@@ -102,5 +102,5 @@
 }
 
 .error {
-	color: red;
+	color: #f3a300;
 }
